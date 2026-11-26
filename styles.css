@@ -1,0 +1,42 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f9;
+  margin: 0;
+  padding: 20px;
+}
+h1,
+h2 {
+  color: #1a4d8f;
+}
+form {
+  background-color: #ffffff;
+  padding: 20px;
+  max-width: 420px;
+  border-radius: 8px;
+}
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px;
+  margin-top: 4px;
+  margin-bottom: 14px;
+}
+fieldset {
+  margin-bottom: 16px;
+  padding: 10px;
+}
+button {
+  background-color: #1a4d8f;
+  color: #ffffff;
+  padding: 10px 24px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #0f3566;
+}
