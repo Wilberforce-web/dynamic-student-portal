@@ -22,3 +22,27 @@ if (registrationForm) {
     }
   });
 }
+const students = [
+  "Alice Wanjiru",
+  "Brian Otieno",
+  "Carol Njeri",
+  "David Kimani",
+  "Esther Achieng",
+];
+function addStudentToPage(name) {
+  const listItem = document.createElement("li");
+  listItem.textContent = name;
+  document.getElementById("student-list").appendChild(listItem);
+}
+function displayAllStudents(students) {
+  document.getElementById("student-list").innerHTML = "";
+  for (let i = 0; i < students.length; i++) {
+    addStudentToPage(students[i]);
+  }
+}
+const showButton = document.getElementById("show-students-btn");
+if (showButton) {
+  showButton.addEventListener("click", function () {
+    displayAllStudents(students);
+  });
+}
