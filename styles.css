@@ -8,6 +8,21 @@ h1,
 h2 {
   color: #1a4d8f;
 }
+nav {
+  display: flex;
+  gap: 24px;
+  background-color: #1a4d8f;
+  padding: 12px 20px;
+  border-radius: 6px;
+}
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav a:hover {
+  text-decoration: underline;
+}
 form {
   background-color: #ffffff;
   padding: 20px;
@@ -39,4 +54,25 @@ button {
 }
 button:hover {
   background-color: #0f3566;
+}
+.content-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  align-items: start;
+}
+.content-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+.intro {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+}
+@media (max-width: 700px) {
+  .content-grid {
+    grid-template-columns: 1fr;
+  }
 }
