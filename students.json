@@ -1,26 +1,31 @@
 [
   {
     "name": "Alice Wanjiru",
+    "email": "alice@example.com",
     "course": "Computer Science",
     "year": 2
   },
   {
     "name": "Brian Otieno",
+    "email": "brian@example.com",
     "course": "Information Technology",
     "year": 1
   },
   {
     "name": "Carol Njeri",
+    "email": "carol@example.com",
     "course": "Business IT",
     "year": 3
   },
   {
     "name": "David Kimani",
+    "email": "david@example.com",
     "course": "Computer Science",
     "year": 1
   },
   {
     "name": "Esther Achieng",
+    "email": "esther@example.com",
     "course": "Information Technology",
     "year": 2
   }
