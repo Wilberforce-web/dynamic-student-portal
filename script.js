@@ -22,27 +22,36 @@ if (registrationForm) {
     }
   });
 }
-const students = [
-  "Alice Wanjiru",
-  "Brian Otieno",
-  "Carol Njeri",
-  "David Kimani",
-  "Esther Achieng",
-];
-function addStudentToPage(name) {
+function addStudentToPage(student) {
   const listItem = document.createElement("li");
-  listItem.textContent = name;
+  listItem.textContent =
+    student.name + " - " + student.course + " (Year " + student.year + ")";
   document.getElementById("student-list").appendChild(listItem);
 }
 function displayAllStudents(students) {
+  document.getElementById("error-message").textContent = "";
   document.getElementById("student-list").innerHTML = "";
   for (let i = 0; i < students.length; i++) {
     addStudentToPage(students[i]);
   }
+  document.getElementById("student-count").textContent =
+    "Registered Students: " + students.length;
+}
+async function loadStudents() {
+  try {
+    const response = await fetch("wrong.json");
+    if (!response.ok) {
+      throw new Error("Request failed with status " + response.status);
+    }
+    const students = await response.json();
+    displayAllStudents(students);
+  } catch (error) {
+    document.getElementById("error-message").textContent =
+      "Unable to load student data. Please try again later.";
+    console.error(error);
+  }
 }
 const showButton = document.getElementById("show-students-btn");
 if (showButton) {
-  showButton.addEventListener("click", function () {
-    displayAllStudents(students);
-  });
+  showButton.addEventListener("click", loadStudents);
 }

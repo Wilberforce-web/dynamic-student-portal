@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Alice Wanjiru",
+    "course": "Computer Science",
+    "year": 2
+  },
+  {
+    "name": "Brian Otieno",
+    "course": "Information Technology",
+    "year": 1
+  },
+  {
+    "name": "Carol Njeri",
+    "course": "Business IT",
+    "year": 3
+  },
+  {
+    "name": "David Kimani",
+    "course": "Computer Science",
+    "year": 1
+  },
+  {
+    "name": "Esther Achieng",
+    "course": "Information Technology",
+    "year": 2
+  }
+]
